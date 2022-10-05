@@ -7,6 +7,8 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   name1 = 'Angular ' + VERSION.major;
+  details1 = 'test';
+  testcondition = { name: 'Ramesh', Age: 34 };
   onSubmitUser = (user) => {
     console.log(user);
   };

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'hello',
@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class HelloComponent {
   @Input() name: string;
   @Input() age: string;
+  @Output() details: string="Test the output"
 }

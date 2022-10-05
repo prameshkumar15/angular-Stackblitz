@@ -1,4 +1,7 @@
-<hello #hellocomp name="{{ name1 }}" age="32"></hello>
+<hello #hellocomp name="{{ name1 }}" age="32" details="details1"></hello>
 <p>Start editing to see some magic happen testing :)</p>
 <input />
 <button (click)="onSubmitUser(hellocomp)">Onckick</button>
+<p>{{ details1 }}</p>
+<div *ngIf="testcondition.Age ==34 else notmatching">Loading the data</div>
+<ng-template #notmatching>Not Matching</ng-template>
